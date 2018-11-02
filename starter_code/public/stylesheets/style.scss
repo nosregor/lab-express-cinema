@@ -1,11 +1,15 @@
 body {
-  padding: 50px;
+  // padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+  // text-align: left;
+  // padding-top: 70px;
+  // // padding-left: 100px;
 
 .header {
   background: url('../images/cinema.jpg') 0 0 no-repeat;
@@ -14,21 +18,26 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: right;
   
   h2 {
     font-size: 70px;
     color: white;
     float: right;
+    position:absolute;
+    right:14%;
+    top: 15vh;
+    font-weight: bold;
   }
   .lnk-movie{
     text-decoration: none
   }
   .btn-movies{
     border-radius: 70px;
-    padding: 10px 30px;
+    padding: 15px 30px;
     font-size: 16px;
-    
+    position:absolute;
+    right: 22%;
+    top: 40vh;
   }
 }
 
