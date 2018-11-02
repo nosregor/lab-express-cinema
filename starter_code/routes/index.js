@@ -20,4 +20,20 @@ router.get('/movies', (req, res, next) => {
     });
 });
 
+
+// Get movies/:movieID
+router.get('/movie/:id', (req, res, next) => {
+  const id = req.params.id;
+  Movie.findById(id)
+    .then((movieFromDb) => {
+      const data = {
+        movie: movieFromDb,
+      };
+      res.render('movie-detail', data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
 module.exports = router;
