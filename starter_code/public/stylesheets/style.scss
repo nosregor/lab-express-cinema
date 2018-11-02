@@ -1,16 +1,11 @@
 body {
-  // padding: 50px;
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
-
-// .container {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .header {
   background: url('../images/cinema.jpg') 0 0 no-repeat;
@@ -26,7 +21,7 @@ a {
     color: white;
     float: right;
   }
-  .lnk-movies{
+  .lnk-movie{
     text-decoration: none
   }
   .btn-movies{
@@ -37,3 +32,13 @@ a {
   }
 }
 
+.movie-card{
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
+
+  .movie-title{
+    margin: 10px 0;
+    font-weight: bold;
+  }
+}
